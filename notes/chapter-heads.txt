@@ -1,0 +1,65 @@
+### VID: 1 - Introduction to PHP Programming 
+### VID: 2 - Installing A Local Server for PHP 
+### VID: 3 - Output In Browser Using PHP 
+### VID: 4 - How to Create PHP Variables 
+### VID: 5 - How to Write Comments in PHP 
+### VID: 6 - What Are Internal Functions in PHP 
+### VID: 7 - Different Data Types in PHP 
+### VID: 8 - What Are Arithmetic Operators in PHP 
+### VID: 9 - What Are Assignment Operators in PHP 
+### VID: 10 - What Are Comparison Operators in PHP 
+### VID: 11 - What Are Increment and Decrement Operators in PHP 
+### VID: 12 - What Are Logical Operators in PHP 
+### VID: 13 - Various Conditional Statements in PHP 
+### VID: 14 - Switch Statements in PHP 
+### VID: 15 - Exercise Using PHP 
+### VID: 16 - Exercise Using PHP 
+### VID: 17 - What Is a While Loop in PHP 
+### VID: 18 - What Is a Do While Loop in PHP 
+### VID: 19 - How to Create a For Loop in PHP 
+### VID: 20 - How to Create a Foreach Loop in PHP 
+### VID: 21 - Using Arrays in PHP to Store Data 
+### VID: 22 - How to Create Your Own Function in PHP 
+### VID: 23 - How to Include Documents in PHP 
+### VID: 24 - Local and Global Scope in PHP 
+### VID: 25 - Different Superglobals in PHP 
+### VID: 26 - POST and GET Superglobals in PHP 
+### VID: 27 - Session and Cookies in PHP 
+### VID: 28 - How to Start a Session in PHP 
+### VID: 29 - How to Create a MySQL Database for PHP 
+### VID: 30 - Create a MySQL Table in Database 
+### VID: 31 - MySQL Insert Into Database 
+### VID: 32 - Select Data From MySQL Database 
+### VID: 33 - Update Data From MySQL Database 
+### VID: 34 - Delete Data From MySQL Database 
+### VID: 35 - Set Data Order From MySQL Database 
+### VID: 36 - How to connect to a database in PHP 
+### VID: 37 - How to show database data on a website using MySQLi 
+### VID: 38 - Insert data from a website into a database using MySQLi 
+### VID: 39 - Protect your database against SQL injection using MySQLi 
+### VID: 40 - What are Prepared Statements and how to use them 
+### VID: 41 - What Are Error Handlers in PHP 
+### VID: 42 - How to Display Error Messages Using PHP 
+### VID: 43 - Hashing and de-hashing data using PHP 
+### VID: 44 - (UPDATED VIDEO IN DESC) How To Create A Login System In PHP For Beginners 
+### VID: 45 - What are arrays used for in PHP - PHP tutorial
+### VID: 46 - Insert data into array in PHP - PHP tutorial
+### VID: 47 - Inserting database results into array in PHP - PHP tutorial
+### VID: 48 - Different types of array in PHP - PHP tutorial
+### VID: 49 - What are associative arrays in PHP - PHP tutorial
+### VID: 50 - What are multidimensional arrays in PHP - PHP tutorial
+### VID: 51 - Upload Files and Images to Website in PHP 
+### VID: 52 - How to upload profile images to users using PHP - PHP tutorial
+### VID: 53 - Delete profile image using PHP - PHP tutorial
+### VID: 54 - How to delete files from folder - PHP tutorial
+### VID: 55 - Delete more than one file or image in PHP - PHP tutorial
+### VID: 56 - Search for full file name in PHP tutorial - PHP tutorial
+### VID: 57 - How to create a search field with PHP and MySQLi 
+### VID: 58 - How to Create A PHP Contact Form 
+### VID: 59 - Functions Using Regular Expressions 
+### VID: 60 - Search Patterns Using Regular Expressions 
+### VID: 61 - How to Create a Unique String in PHP 
+### VID: 62 - How to Remove the File Extension and Variables From the URL 
+### VID: 63 - How to Create a PHP Gallery Part 1 
+### VID: 64 - How to Create a PHP Gallery Part 2 
+### VID: 65 - How to Create a PHP Gallery Part 3 
