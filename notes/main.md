@@ -5,37 +5,87 @@
 <a id="top-bookmark-btn" class="bookmark-link" href="#bookmark">JUMP TO BOOKMARK</a>
 
 
-### VID: 01-02
+### VID: 01
 
-- screenshot.png = 1200x900
-- Create 10 templates:
-  * functions.php: default plugin for WP
-  * page.php: template for all page
-  * single.php: single blog post template
-  * archive.php: post lists pages
-  * front-page.php: automatically attaches itself to your homepage. This template automatically loads on the front page
+##### PREQUISITES:
+
+- Know HTML & CSS
+
+##### HELPFUL TO KNOW:
+
+- Know some JavaScript makes it easier understand PHP
+
+##### DEFINITION: PHP
+
+- **PHP**: PHP Hypertext Preprocessor; A backend / server-side programming language.
+
+##### What you can do with PHP?
+
+- Make a more dynamic website
+- Only with HTML / CSS you make a static page with links and image
+- With PHP you can make a dynamic site with a login system, registration signup, forum with post-capability.
+- You will need a database in order to save data
+- Server-side language is needed to connect the website to the database. This is what PHP is for
+- Facebook & WordPress use PHP
+- Easy to learn server-side languages
+- Insert and get stuff from databases
+- Create cookies
+- Need to have SERVER acces
+
+- PHP can be difficult for some people to learn in the beginning to those only familiar with HTML/CSS
+ 
+
+## VID: 02
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 
-### VID: 03
-
-#### Main Theme Template Files:
-
-| File               | Purpose                                                                      |
-| ------------------ | ---------------------------------------------------------------------------- |
-| **functions.php**  | default plugin for WP. Adds additional functionality that WP core is missing |
-| **page.php**       | default page template                                                        |
-| **single.php**     | single blog post template                                                    |
-| **index.php**      |                                                                              |
-| **front-page.php** |                                                                              |
-| **archive.php**    | post list pages                                                              |
-| **search.php**     | search results                                                               |
-| **404.php**        | page not found                                                               |
-| **header.php**     | default site header                                                          |
-| **footer.php**     | default site footer                                                          |
 
 
----
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 **functions.php:**
 
