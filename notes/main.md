@@ -87,47 +87,40 @@ How to print things to the browser?
 
 
 
+### VID: 4 - How to Create PHP Variables 
+
+!!! #GOTCHA: VSCode autogenerates the `action` property. Delete that and replace with `method` instead (at this point) because we are not using the action property yet.
+
+Here is the code that is created in this lesson:
+
+```php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+<form method="GET">
+  <input type="text" name="person">
+  <button>SUBMIT</button>
+</form>
+
+<?php
+
+  $name = $_GET['person'];
+  echo $name . " is a handsome fellow!";
+
+?>
+
+</body>
+</html>
+```
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### VID: 5 - How to Write Comments in PHP 
 
 
 
@@ -135,9 +128,6 @@ How to print things to the browser?
 
 <a id="bookmark" href="#top-bookmark-btn" title="back to top">BOOKMARK</a>
 
-
-### VID: 4 - How to Create PHP Variables 
-### VID: 5 - How to Write Comments in PHP 
 ### VID: 6 - What Are Internal Functions in PHP 
 ### VID: 7 - Different Data Types in PHP 
 ### VID: 8 - What Are Arithmetic Operators in PHP 
