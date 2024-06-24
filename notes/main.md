@@ -147,10 +147,20 @@ echo strpos("Hi Daniel", "Daniel");
 echo str_replace("Daniel", "Jason", "Hi Daniel");
 ```
 
-<a id="bookmark" href="#top-bookmark-btn" title="back to top">BOOKMARK</a>
 
 
 ### VID: 7 - Different Data Types in PHP 
+
+- **string**: can use double or single quotes
+- **integer**: a number with no decimals
+- **float**: a number with decimal precision
+- **boolean**: a value that is either true or false (1 or 0)
+- **array**: collection, list of comma-separated quoted values or numbers
+
+
+
+<a id="bookmark" href="#top-bookmark-btn" title="back to top">BOOKMARK</a>
+
 ### VID: 8 - What Are Arithmetic Operators in PHP 
 ### VID: 9 - What Are Assignment Operators in PHP 
 ### VID: 10 - What Are Comparison Operators in PHP 
