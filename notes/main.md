@@ -122,13 +122,34 @@ Here is the code that is created in this lesson:
 
 ### VID: 5 - How to Write Comments in PHP 
 
+`// single line comment`
+
+`/* multi
+    line
+    comment */'
 
 
+### VID: 6 - What Are Internal Functions in PHP 
 
+- **pre-determined function**: A function that already exists in the PHP language
+
+- func: **strlen()**: Get string character length
+- func: **str_word_count()**
+- func: **strrev()**
+- func: **strpos()**
+- func: **str_replace()**
+
+```php
+echo strlen("Hi Daniel");
+echo str_word_count("Hi Daniel");
+echo strrev("Hi Daniel");
+echo strpos("Hi Daniel", "Daniel");
+echo str_replace("Daniel", "Jason", "Hi Daniel");
+```
 
 <a id="bookmark" href="#top-bookmark-btn" title="back to top">BOOKMARK</a>
 
-### VID: 6 - What Are Internal Functions in PHP 
+
 ### VID: 7 - Different Data Types in PHP 
 ### VID: 8 - What Are Arithmetic Operators in PHP 
 ### VID: 9 - What Are Assignment Operators in PHP 

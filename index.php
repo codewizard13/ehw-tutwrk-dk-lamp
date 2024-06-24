@@ -7,15 +7,13 @@
 </head>
 <body>
 
-<form method="GET">
-  <input type="text" name="person">
-  <button>SUBMIT</button>
-</form>
-
 <?php
 
-  $name = $_GET['person'];
-  echo $name . " is a handsome fellow!";
+  echo strlen("Hi Daniel");
+  echo str_word_count("Hi Daniel");
+  echo strrev("Hi Daniel");
+  echo strpos("Hi Daniel", "Daniel");
+  echo str_replace("Daniel", "Jason", "Hi Daniel");
 
 ?>
 
