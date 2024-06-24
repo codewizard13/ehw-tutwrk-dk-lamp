@@ -172,10 +172,30 @@ All the normal add, subtract, multiply, divide ... plus:
   echo 5**2; // exponentiation = power of
 ```
 
-<a id="bookmark" href="#top-bookmark-btn" title="back to top">BOOKMARK</a>
 
 ### VID: 9 - What Are Assignment Operators in PHP 
+
+=, +=, /=, %=
+
+
 ### VID: 10 - What Are Comparison Operators in PHP 
+
+Used in conditionals
+
+- **==**: same value
+- **=**: assignment operator
+- **!=**: not same value
+- **===**: same value and data type; useful for differentiating number from string
+- **<**: less than
+- **>**: greater than
+- **<=**: 
+- **>=**: 
+- **!==**: not same number and data type
+- **<>**: another version of not equal to
+
+
+<a id="bookmark" href="#top-bookmark-btn" title="back to top">BOOKMARK</a>
+
 ### VID: 11 - What Are Increment and Decrement Operators in PHP 
 ### VID: 12 - What Are Logical Operators in PHP 
 ### VID: 13 - Various Conditional Statements in PHP 
