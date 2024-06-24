@@ -38,13 +38,30 @@
 
 ### VID: 2 - Installing A Local Server for PHP 
 
+- If you don't have a server running, it won't run inside the browser
+- He's using **XAMPP**
+- We use databases inside PHP to store data
+- **htdocs**: Apache's `document root` for all sites
+
+##### APACHE
+
+Steps specific to this tutorial:
+
+- Delete all subfolders in htdocs/
+- Create new subfolder: **phplessons**
+- Enter the folder 
+
+!!! #GOTCHA: If the server isn't connected or isn't started in Chrome you will get the error on the webpage `This site can’t be reached`
+
+### VID: 3 - Output In Browser Using PHP 
+
+
 
 
 
 <a id="bookmark" href="#top-bookmark-btn" title="back to top">BOOKMARK</a>
 
 
-### VID: 3 - Output In Browser Using PHP 
 ### VID: 4 - How to Create PHP Variables 
 ### VID: 5 - How to Write Comments in PHP 
 ### VID: 6 - What Are Internal Functions in PHP 
