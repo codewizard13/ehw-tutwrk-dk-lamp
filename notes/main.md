@@ -55,6 +55,80 @@ Steps specific to this tutorial:
 
 ### VID: 3 - Output In Browser Using PHP 
 
+- This episode we will actually start writing PHP
+
+!!! #GOTCHA: Make sure you have Apache server started / running
+
+!!! #GOTCHA: If server is running, but there is no index.php, you will see a directory in the browser instead of the starting page
+
+- Apache will automatically recognize index.html or index.php as the startpage
+
+Basic HTML scaffolding / starting framework:
+
+```htm
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+```
+
+How to print things to the browser?
+
+- **echo** or **print**
+- echo loads faster
+- Numbers with quotes around them are seen as text
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
