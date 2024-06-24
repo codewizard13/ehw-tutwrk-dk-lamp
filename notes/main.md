@@ -220,9 +220,39 @@ echo $x--; // 9
 echo $x; // 8
 ```
 
-<a id="bookmark" href="#top-bookmark-btn" title="back to top">BOOKMARK</a>
 
 ### VID: 12 - What Are Logical Operators in PHP 
+
+Logical operators allow comparison of more than one thing in conditional statements.
+
+- **OR** or **||**
+- **AND** or **&&**
+- **XOR**: Only one condition can be true
+
+```php
+  // Logical Operators
+  $x = 20;
+  $y = 20;
+
+  // Both are true so result is false
+  echo '($x == $y xor 1 == 1) IS ';
+  if ($x == $y xor 1 == 1) {
+    echo "True<br>";
+  } else {
+    echo "False<br>";
+  }
+
+  // Only the condition on the right is true so result is true
+  echo '($x == ($y/2) xor 1 == 1) IS ';
+  if ($x == ($y/2) xor 1 == 1) {
+    echo "True<br>";
+  } else {
+    echo "False<br>";
+  }
+  ```
+
+<a id="bookmark" href="#top-bookmark-btn" title="back to top">BOOKMARK</a>
+
 ### VID: 13 - Various Conditional Statements in PHP 
 ### VID: 14 - Switch Statements in PHP 
 ### VID: 15 - Exercise Using PHP 

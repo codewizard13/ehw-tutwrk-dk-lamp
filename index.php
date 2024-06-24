@@ -9,23 +9,25 @@
 
 <?php
 
-  // Increment/Decrement Operators
-  $x = 10;
+  // Logical Operators
+  $x = 20;
+  $y = 20;
 
-  // Add one then echo
-  echo ++$x; // 11
+  // Both are true so result is false
+  echo '($x == $y xor 1 == 1) IS ';
+  if ($x == $y xor 1 == 1) {
+    echo "True<br>";
+  } else {
+    echo "False<br>";
+  }
 
-  // Echo then add one
-  echo $x++; // 11
-  echo $x; // 12
-
-  // Minus one then echo
-  $x = 10;
-  echo --$x; // 9
-
-  // Echo then minus one
-  echo $x--; // 9
-  echo $x; // 8
+  // Only the condition on the right is true so result is true
+  echo '($x == ($y/2) xor 1 == 1) IS ';
+  if ($x == ($y/2) xor 1 == 1) {
+    echo "True<br>";
+  } else {
+    echo "False<br>";
+  }
 
 ?>
 
