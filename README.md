@@ -9,7 +9,7 @@
 
 ### GITHUB REPO
 
-- https://github.com/codewizard13/ehw-tutwrk-wp-theme-mrdigital
+- https://github.com/codewizard13/ehw-tutwrk-dk-lamp
 
 ### TECHNOLOGIES
 
