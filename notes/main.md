@@ -193,10 +193,35 @@ Used in conditionals
 - **!==**: not same number and data type
 - **<>**: another version of not equal to
 
+### VID: 11 - What Are Increment and Decrement Operators in PHP 
+
+Increase or decrease a number by one
+
+- **++**: add one; position matters
+- **--**: subtract one; position matters
+
+```php
+// Increment/Decrement Operators
+$x = 10;
+
+// Add one then echo
+echo ++$x; // 11
+
+// Echo then add one
+echo $x++; // 11
+echo $x; // 12
+
+// Minus one then echo
+$x = 10;
+echo --$x; // 9
+
+// Echo then minus one
+echo $x--; // 9
+echo $x; // 8
+```
 
 <a id="bookmark" href="#top-bookmark-btn" title="back to top">BOOKMARK</a>
 
-### VID: 11 - What Are Increment and Decrement Operators in PHP 
 ### VID: 12 - What Are Logical Operators in PHP 
 ### VID: 13 - Various Conditional Statements in PHP 
 ### VID: 14 - Switch Statements in PHP 
