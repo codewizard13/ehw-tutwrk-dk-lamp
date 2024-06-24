@@ -52,3 +52,4 @@ Notes are located in [./notes/main.md](./notes/main.md)
 ## RESOURCES & REFERENCE
 
 - Good **Color Names** and Shades website: https://www.html-color-names.com/lightgreen.php
+- [Ascii Characters](https://www.ascii-code.com/): Find the cross-type divide symbol here

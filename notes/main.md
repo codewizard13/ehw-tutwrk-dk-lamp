@@ -158,10 +158,22 @@ echo str_replace("Daniel", "Jason", "Hi Daniel");
 - **array**: collection, list of comma-separated quoted values or numbers
 
 
+### VID: 8 - What Are Arithmetic Operators in PHP 
+
+All the normal add, subtract, multiply, divide ... plus:
+
+- **modulus**: Percent symbol - returns the remainder of a divide operation
+- **exponentiation**: Double asterisk - returns the number on the left to the power of the number on the right
+
+```php
+  // Arithmetic Operators
+  //echo 5 % 5; // modulus = remainder
+  // echo 8 % 5; // remainder should be 3
+  echo 5**2; // exponentiation = power of
+```
 
 <a id="bookmark" href="#top-bookmark-btn" title="back to top">BOOKMARK</a>
 
-### VID: 8 - What Are Arithmetic Operators in PHP 
 ### VID: 9 - What Are Assignment Operators in PHP 
 ### VID: 10 - What Are Comparison Operators in PHP 
 ### VID: 11 - What Are Increment and Decrement Operators in PHP 

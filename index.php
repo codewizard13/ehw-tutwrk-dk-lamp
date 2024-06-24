@@ -9,11 +9,11 @@
 
 <?php
 
-  echo strlen("Hi Daniel");
-  echo str_word_count("Hi Daniel");
-  echo strrev("Hi Daniel");
-  echo strpos("Hi Daniel", "Daniel");
-  echo str_replace("Daniel", "Jason", "Hi Daniel");
+  // Arithmetic Operators
+  //echo 5 % 5; // modulus = remainder
+  // echo 8 % 5; // remainder should be 3
+  echo 5**2; // exponentiation = power of
+
 
 ?>
 
