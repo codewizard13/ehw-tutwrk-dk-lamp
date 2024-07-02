@@ -251,9 +251,17 @@ Logical operators allow comparison of more than one thing in conditional stateme
   }
   ```
 
-<a id="bookmark" href="#top-bookmark-btn" title="back to top">BOOKMARK</a>
 
 ### VID: 13 - Various Conditional Statements in PHP 
+
+- **if**
+- **elseif**: As many elseif conditions as you want; can be written `else if` also
+
+<a id="bookmark" href="#top-bookmark-btn" title="back to top">BOOKMARK</a>
+
+
+
+
 ### VID: 14 - Switch Statements in PHP 
 ### VID: 15 - Exercise Using PHP 
 ### VID: 16 - Exercise Using PHP 

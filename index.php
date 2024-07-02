@@ -9,26 +9,15 @@
 
 <?php
 
-  // Logical Operators
-  $x = 20;
-  $y = 20;
+  $x = 2;
 
-  // Both are true so result is false
-  echo '($x == $y xor 1 == 1) IS ';
-  if ($x == $y xor 1 == 1) {
-    echo "True<br>";
+  if ($x == 1) {
+    echo "Daniel is very handsome!";
+  } else if ($x == 2) {
+    echo "Daniel is kinda handsome!";
   } else {
-    echo "False<br>";
+    echo "Daniel is very ugly!";
   }
-
-  // Only the condition on the right is true so result is true
-  echo '($x == ($y/2) xor 1 == 1) IS ';
-  if ($x == ($y/2) xor 1 == 1) {
-    echo "True<br>";
-  } else {
-    echo "False<br>";
-  }
-
 ?>
 
 </body>
