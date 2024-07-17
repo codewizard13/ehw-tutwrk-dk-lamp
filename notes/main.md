@@ -307,7 +307,18 @@ Logical operators allow comparison of more than one thing in conditional stateme
 
 - Added prj/ folder for mini projects / exercises
 
+- First, we need to create a form to handle inputs
+- The "name" attributes are what lets PHP (and other languages) access the form data
 
+- Create basic form with two inputs like this:
+
+```php
+<form>
+  <input type="text" name="num1" placeholder="Number 1">
+  <input type="text" name="num2" placeholder="Number 2">
+
+</form>
+```
 
 
 
