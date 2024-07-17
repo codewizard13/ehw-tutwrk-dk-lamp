@@ -402,11 +402,52 @@ Logical operators allow comparison of more than one thing in conditional stateme
 ?>
 ```
 
-
 !!! #GOTCHA: This works, but ERROR Uncaught TypeError: Unsupported operand types: string / string. Means numbers are being treated as strings, but need to be converted to numbers somehow
 
 
 ### VID: 16 - Exercise Using PHP 
+
+!!! #TIP: Refer to W3Schools date params: https://www.w3schools.com/php/func_date_date.asp
+
+- Add style to main.css and connect with link tag
+- Add switch statement to print out current day name
+- MODIFIED Dani's code to define the $dow_name variable in the the switch statement, instead of echoing out in the switch
+- Final code:
+
+```php
+  <?php
+
+  $dayofweek = date("w");
+
+  switch ($dayofweek) {
+    case 1:
+      $dow_name = "Monday";
+      break;
+    case 2:
+      $dow_name = "Tuesday";
+      break;
+    case 3:
+      $dow_name = "Wednesday";
+      break;
+    case 4:
+      $dow_name = "Thursday";
+      break;
+    case 5:
+      $dow_name = "Friday";
+      break;
+    case 6:
+      $dow_name = "Saturday";
+      break;
+    case 0:
+      $dow_name = "Sunday";
+      break;
+  }
+
+  ?>
+  <p>It is <?php echo $dow_name; ?></p>
+  ```
+
+
 ### VID: 17 - What Is a While Loop in PHP 
 ### VID: 18 - What Is a Do While Loop in PHP 
 ### VID: 19 - How to Create a For Loop in PHP 
