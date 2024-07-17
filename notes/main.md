@@ -302,6 +302,15 @@ Logical operators allow comparison of more than one thing in conditional stateme
 ```
 
 ### VID: 15 - Exercise Using PHP 
+
+**Build Calculator inside Browser**
+
+- Added prj/ folder for mini projects / exercises
+
+
+
+
+
 ### VID: 16 - Exercise Using PHP 
 ### VID: 17 - What Is a While Loop in PHP 
 ### VID: 18 - What Is a Do While Loop in PHP 
