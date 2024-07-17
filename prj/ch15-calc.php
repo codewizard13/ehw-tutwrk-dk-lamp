@@ -17,9 +17,19 @@
     <option>Multiply</option>
     <option>Divide</option>
   </select>
-
+  <br>
+  <button name="submit" value="submit" type="submit">Calculate</button>
 </form>
 
+<p>The answer is: </p>
+<?php
+  // First, Check if we have hit the submit button
+  if (isset($_GET['submit'])) {
+    echo "YES -- Sumbit has been pressed!";
+  } else {
+    echo "NO!!! Submit NOT pressed yet!!!";
+  }
+?>
 
 </body>
 </html>

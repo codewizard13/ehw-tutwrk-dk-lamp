@@ -332,6 +332,13 @@ Logical operators allow comparison of more than one thing in conditional stateme
   </select>
 ```
 
+- Add button with type, name, and value of "submit"
+
+- Type 5 for num1 and 10 for num2 and click "Calculate" button:
+- Nothing on screen, but values are added to URL as **query parameters**:
+
+> http://dani-krossing.test/dk-lamp/prj/ch15-calc.php?num1=5&num2=10&operator=None&submit=submit
+
 
 ### VID: 16 - Exercise Using PHP 
 ### VID: 17 - What Is a While Loop in PHP 
