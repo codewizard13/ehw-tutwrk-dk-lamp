@@ -25,9 +25,31 @@
 <?php
   // First, Check if we have hit the submit button
   if (isset($_GET['submit'])) {
-    echo "YES -- Sumbit has been pressed!";
-  } else {
-    echo "NO!!! Submit NOT pressed yet!!!";
+    $result1 = $_GET['num1'];
+    $result2 = $_GET['num2'];
+    $operator = $_GET['operator'];
+
+    switch ($operator) {
+      case "None":
+        echo "ERROR: You need to select a method!";
+      break;
+      case "Add":
+        echo $result1 + $result2;
+      break;
+      case "Subtract":
+        echo $result1 - $result2;
+      break;
+      case "Multiply":
+        echo $result1 * $result2;
+      break;
+      case "Divide":
+        echo $result1 / $result2;
+      break;
+    }
+
+/**
+ * #GOTCHA: This works, but ERROR Uncaught TypeError: Unsupported operand types: string / string. Means numbers are being treated as strings, but need to be converted to numbers somehow
+ */
   }
 ?>
 

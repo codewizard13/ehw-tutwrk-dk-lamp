@@ -339,6 +339,72 @@ Logical operators allow comparison of more than one thing in conditional stateme
 
 > http://dani-krossing.test/dk-lamp/prj/ch15-calc.php?num1=5&num2=10&operator=None&submit=submit
 
+- Open php tags under the form
+- Add check for if submit button pressed and if so, define inputs:
+
+```php
+<p>The answer is: </p>
+<?php
+  // First, Check if we have hit the submit button
+  if (isset($_GET['submit'])) {
+    $result1 = $_GET['num1'];
+    $result2 = $_GET['num2'];
+    $operator = $_GET['operator'];
+  }
+?>
+```
+
+- Add switch statement to handle the operator choice
+- Finished result:
+
+```php
+<form>
+  <input type="text" name="num1" placeholder="Number 1">
+  <input type="text" name="num2" placeholder="Number 2">
+  <select name="operator">
+    <option>None</option>
+    <option>Add</option>
+    <option>Subtract</option>
+    <option>Multiply</option>
+    <option>Divide</option>
+  </select>
+  <br>
+  <button name="submit" value="submit" type="submit">Calculate</button>
+</form>
+
+<p>The answer is: </p>
+<?php
+  // First, Check if we have hit the submit button
+  if (isset($_GET['submit'])) {
+    $result1 = $_GET['num1'];
+    $result2 = $_GET['num2'];
+    $operator = $_GET['operator'];
+
+    switch ($operator) {
+      case "None":
+        echo "ERROR: You need to select a method!";
+      break;
+      case "Add":
+        echo $result1 + $result2;
+      break;
+      case "Subtract":
+        echo $result1 - $result2;
+      break;
+      case "Multiply":
+        echo $result1 * $result2;
+      break;
+      case "Divide":
+        echo $result1 / $result2;
+      break;
+    }
+
+  }
+?>
+```
+
+
+!!! #GOTCHA: This works, but ERROR Uncaught TypeError: Unsupported operand types: string / string. Means numbers are being treated as strings, but need to be converted to numbers somehow
+
 
 ### VID: 16 - Exercise Using PHP 
 ### VID: 17 - What Is a While Loop in PHP 
