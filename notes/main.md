@@ -259,10 +259,48 @@ Logical operators allow comparison of more than one thing in conditional stateme
 
 <a id="bookmark" href="#top-bookmark-btn" title="back to top">BOOKMARK</a>
 
-
-
-
 ### VID: 14 - Switch Statements in PHP 
+
+- Good if you are checking for different variables, but not for statements (according to Dani ?)
+
+**Ex:**
+
+```php
+<?php
+
+  // $x = 1;
+  // $x = "number";
+  // $x = 4;
+  $x = 8;
+
+
+  // switch ($x) {
+  //   case 1:
+  //     echo "The answer is 1";
+  //   break; // says we're ending this case
+  //   case "number":
+  //     echo "The answer is number";
+  //   break; 
+  // }
+
+  switch ($x) {
+    case 1:
+      echo "The answer is 1";
+    break; // says we're ending this case
+    case 2:
+      echo "The answer is 2";
+    break; // says we're ending this case
+    case 3:
+      echo "The answer is 3";
+    break; // says we're ending this case
+    case 4:
+      echo "The answer is 4";
+    break; // says we're ending this case
+    default:
+      echo "There is no answer"; // else equivalent - no break needed since last case
+  }
+```
+
 ### VID: 15 - Exercise Using PHP 
 ### VID: 16 - Exercise Using PHP 
 ### VID: 17 - What Is a While Loop in PHP 
