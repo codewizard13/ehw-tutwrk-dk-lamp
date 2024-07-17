@@ -320,6 +320,17 @@ Logical operators allow comparison of more than one thing in conditional stateme
 </form>
 ```
 
+- Add a select button for 'operator' (add, subtract, etc.)
+
+```php
+  <select name="operator">
+    <option>None</option>
+    <option>Add</option>
+    <option>Subtract</option>
+    <option>Multiply</option>
+    <option>Divide</option>
+  </select>
+```
 
 
 ### VID: 16 - Exercise Using PHP 
