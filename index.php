@@ -1,30 +1,33 @@
 <?php
-include 'header.php';
+  session_start();
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+</head>
+<body>
+
+<ul>
+  <li><a href="index.php">HOME</a></li>
+  <li><a href="contact.php">CONTACT</a></li>
+</ul>
 
 <?php
-/*
-$_COOKIE
-$_SESSION
-*/
 
-// 86,400 ms = 1 day
-// Subtracting from time() will cause a negative
-//  and automatically destroy the cookie
-setcookie( "name","Daniel", time() + 86400 );
+$_SESSION['username'] = "dani948a";
+echo $_SESSION['username'];
 
-$_SESSION['name'] = "ID-12";
-
-function printArr($arr) {
-  echo "<pre>".print_r($arr, true)."</pre>";
+if ( ! isset($_SESSION['username'])) {
+  echo "You are not logged in!<br>"; 
+} else {
+  echo "You are logged in!";
 }
 
-echo '<h3>$_COOKIE</h3>';
-printArr($_COOKIE);
-echo '<h3>$_SESSION</h3>';
-printArr($_SESSION);
-
 ?>
-</body>
 
+</body>
 </html>

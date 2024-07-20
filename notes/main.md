@@ -678,10 +678,21 @@ printArr($_SESSION);
 
 ### VID: 28 - How to Start a Session in PHP 
 
+- $_SESSION variables aren't automatically remembered on various pages. `session_start()` at the top of each page is like saying "access this global space with session variables"
+- You must put the following at the top of each page you want to reference the global $_SESSION variables on:
 
+```
+<?php
+  session_start();
+?>
+```
 
+- #TIP: `session_start()` is a good thing to put in a header.php include
 
 ### VID: 29 - How to Create a MySQL Database for PHP 
+
+!!! 🛢 Finally we are working with DATABASES! 🛢
+
 ### VID: 30 - Create a MySQL Table in Database 
 ### VID: 31 - MySQL Insert Into Database 
 ### VID: 32 - Select Data From MySQL Database 
