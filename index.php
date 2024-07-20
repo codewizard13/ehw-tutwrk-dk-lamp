@@ -15,13 +15,9 @@
   //For Loop
   //Foreach Loop
 
-  $x = 1;
-
-  do {
-    echo "hi there<br>";
-    $x++;
+  for ($x = 0; $x <= 10; $x++) {
+    echo $x+1 . " hi<br>";
   }
-  while ($x <= 5);
 
 ?>
 

@@ -485,6 +485,15 @@ Logical operators allow comparison of more than one thing in conditional stateme
 
 ### VID: 19 - How to Create a For Loop in PHP 
 
+```php
+  for ($x = 0; $x <= 10; $x++) {
+    echo $x+1 . " hi<br>";
+  }
+```
+
+
+
+
 
 
 ### VID: 20 - How to Create a Foreach Loop in PHP 
