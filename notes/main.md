@@ -505,10 +505,15 @@ foreach ($array as $loopdata) {
 }
 ```
 
-
-
-
 ### VID: 21 - Using Arrays in PHP to Store Data 
+
+- Pupose of arrays: store a lot of data in a single variable
+- Access arrays with bracket notation like this:
+
+```php
+echo $array[0];
+```
+
 ### VID: 22 - How to Create Your Own Function in PHP 
 ### VID: 23 - How to Include Documents in PHP 
 ### VID: 24 - Local and Global Scope in PHP 
