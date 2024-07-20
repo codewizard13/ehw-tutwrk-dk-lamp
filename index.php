@@ -17,11 +17,11 @@
 
   $x = 1;
 
-  while ($x <= 5) {
+  do {
     echo "hi there<br>";
-    $x++; // if this part is missing you may
-    // encounter infinite loop condition error
+    $x++;
   }
+  while ($x <= 5);
 
 ?>
 

@@ -470,7 +470,23 @@ Logical operators allow comparison of more than one thing in conditional stateme
 
 
 ### VID: 18 - What Is a Do While Loop in PHP 
+
+- Do-While loop: will always execute AT LEAST ONCE
+
+```php
+  $x = 1;
+
+  do {
+    echo "hi there<br>";
+    $x++;
+  }
+  while ($x <= 5);
+```
+
 ### VID: 19 - How to Create a For Loop in PHP 
+
+
+
 ### VID: 20 - How to Create a Foreach Loop in PHP 
 ### VID: 21 - Using Arrays in PHP to Store Data 
 ### VID: 22 - How to Create Your Own Function in PHP 
