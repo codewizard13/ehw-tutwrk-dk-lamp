@@ -572,7 +572,7 @@ newCalc($a);
 
 !!! 🆕 NOW WE are starting to learn some NEW stuff I never knew!
 
-- $GLOBALS: Includes these 4 superglobals [$_GET, $_POST, $_COOKIE, $_FILES] and any other custom variables in the global scope.
+- **$GLOBALS:** Includes these 4 superglobals [$_GET, $_POST, $_COOKIE, $_FILES] and any other custom variables in the global scope.
 - Thus, the following code,
 
 ```php
@@ -622,7 +622,30 @@ Array
 ```
 
 ### VID: 26 - POST and GET Superglobals in PHP 
+
+- Allows you to pass information from a form into a URL that can be used on a separate page
+- Form method: Tells the form whether to use GET or POST
+- GET is visible in address bar, POST isn't
+
+#GOTCHA: If you are using POST method, calling GET variables will fail and vice versa!
+
+```php
+<?php
+echo $_POST['name'];
+
+?>
+
+
+<form method="post">
+  <input type="hidden" name="name" value="Daniel">
+  <button type="submit">PRESS ME!</button>
+</form>
+```
+
 ### VID: 27 - Session and Cookies in PHP 
+
+
+
 ### VID: 28 - How to Start a Session in PHP 
 ### VID: 29 - How to Create a MySQL Database for PHP 
 ### VID: 30 - Create a MySQL Table in Database 
