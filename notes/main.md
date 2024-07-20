@@ -449,6 +449,26 @@ Logical operators allow comparison of more than one thing in conditional stateme
 
 
 ### VID: 17 - What Is a While Loop in PHP 
+
+```php
+<?php
+  //Loop
+
+  //While Loop
+  //Do While Loop
+  //For Loop
+  //Foreach Loop
+
+  $x = 1;
+
+  while ($x <= 5) {
+    echo "hi there<br>";
+    $x++; // if this part is missing you may
+    // encounter infinite loop condition error
+  }
+```
+
+
 ### VID: 18 - What Is a Do While Loop in PHP 
 ### VID: 19 - How to Create a For Loop in PHP 
 ### VID: 20 - How to Create a Foreach Loop in PHP 
