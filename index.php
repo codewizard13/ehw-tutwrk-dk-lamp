@@ -9,10 +9,17 @@
 
 <?php
 
-  $array = array("Daniel", "Jane", "Jacob", "John", "Mariane");
 
-  echo $array[0];
+function newCalc( $x ) {
+  $newnr = $x * 0.75;
+  echo "Here is 75% of what you wrote: " . $newnr . "<br>";
+}
 
+$x = 100;
+newCalc($x);
+
+$a = 10;
+newCalc($a);
 
 ?>
 

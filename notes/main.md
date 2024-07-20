@@ -515,6 +515,23 @@ echo $array[0];
 ```
 
 ### VID: 22 - How to Create Your Own Function in PHP 
+
+- User defined function: custom function we write to use in code later
+
+```php
+function newCalc( $x ) {
+  $newnr = $x * 0.75;
+  echo "Here is 75% of what you wrote: " . $newnr . "<br>";
+}
+
+$x = 100;
+newCalc($x);
+
+$a = 10;
+newCalc($a);
+```
+
+
 ### VID: 23 - How to Include Documents in PHP 
 ### VID: 24 - Local and Global Scope in PHP 
 ### VID: 25 - Different Superglobals in PHP 
