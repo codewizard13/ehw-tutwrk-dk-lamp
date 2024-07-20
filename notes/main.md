@@ -564,9 +564,10 @@ newCalc($a);
 </header>
 ```
 
-
-
 ### VID: 24 - Local and Global Scope in PHP 
+
+- Variables defined inside a function have `local scope`
+
 ### VID: 25 - Different Superglobals in PHP 
 ### VID: 26 - POST and GET Superglobals in PHP 
 ### VID: 27 - Session and Cookies in PHP 
