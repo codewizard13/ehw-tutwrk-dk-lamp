@@ -569,6 +569,58 @@ newCalc($a);
 - Variables defined inside a function have `local scope`
 
 ### VID: 25 - Different Superglobals in PHP 
+
+!!! 🆕 NOW WE are starting to learn some NEW stuff I never knew!
+
+- $GLOBALS: Includes these 4 superglobals [$_GET, $_POST, $_COOKIE, $_FILES] and any other custom variables in the global scope.
+- Thus, the following code,
+
+```php
+$x = 5;
+
+$name = "Johnson";
+
+function something() {
+  $y = 10;
+
+  // This is a REFERENCE to $x and will change the original
+  // $myVar = $GLOBALS['x'];
+
+  // echo "\$myVar = $myVar<br>";
+
+  echo "<pre>".print_r($GLOBALS, true)."</pre>";
+
+}
+
+something();
+```
+
+will output,
+
+```php
+Array
+(
+    [_GET] => Array
+        (
+        )
+
+    [_POST] => Array
+        (
+        )
+
+    [_COOKIE] => Array
+        (
+        )
+
+    [_FILES] => Array
+        (
+        )
+
+    [x] => 5
+    [name] => Johnson
+)
+```
+
 ### VID: 26 - POST and GET Superglobals in PHP 
 ### VID: 27 - Session and Cookies in PHP 
 ### VID: 28 - How to Start a Session in PHP 
