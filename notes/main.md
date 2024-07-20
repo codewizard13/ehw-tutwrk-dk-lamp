@@ -533,6 +533,39 @@ newCalc($a);
 
 
 ### VID: 23 - How to Include Documents in PHP 
+
+- Use `include` keyword. This is how we can separate out sections that are used on multiple pages, but maintain changes in one place (e.g., header.php, footer.php, etc.)
+
+**file: header.php**
+
+```php
+<?php
+  include 'functions/user-functions.php';
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INDEX.php</title>
+</head>
+<body>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="">nav1</a></li>
+      <li><a href="">nav2</a></li>
+      <li><a href="">nav3</a></li>
+      <li><a href="contact.php">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+```
+
+
+
 ### VID: 24 - Local and Global Scope in PHP 
 ### VID: 25 - Different Superglobals in PHP 
 ### VID: 26 - POST and GET Superglobals in PHP 
