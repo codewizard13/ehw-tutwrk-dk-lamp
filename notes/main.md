@@ -644,9 +644,43 @@ echo $_POST['name'];
 
 ### VID: 27 - Session and Cookies in PHP 
 
+- Cookie: saves info on the user / client side
+- Session: saves info on the server
+- Cookies are used to save info you aren't worried about getting hacked, like what size or type of clothing you like
+- Sessions: used to store username and password. Closed when you shut down your browser
+- Cookies: have time limits and will remember info until it expires
 
+```php
+<?php
+/*
+$_COOKIE
+$_SESSION
+*/
+
+// 86,400 ms = 1 day
+// Subtracting from time() will cause a negative
+//  and automatically destroy the cookie
+setcookie( "name","Daniel", time() + 86400 );
+
+$_SESSION['name'] = "ID-12";
+
+function printArr($arr) {
+  echo "<pre>".print_r($arr, true)."</pre>";
+}
+
+echo '<h3>$_COOKIE</h3>';
+printArr($_COOKIE);
+echo '<h3>$_SESSION</h3>';
+printArr($_SESSION);
+
+?>
+```
 
 ### VID: 28 - How to Start a Session in PHP 
+
+
+
+
 ### VID: 29 - How to Create a MySQL Database for PHP 
 ### VID: 30 - Create a MySQL Table in Database 
 ### VID: 31 - MySQL Insert Into Database 
