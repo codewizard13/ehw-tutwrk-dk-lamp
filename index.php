@@ -14,10 +14,12 @@
   //Do While Loop
   //For Loop
   //Foreach Loop
+  $array = array("Daniel", "Jane", "Jacob", "John", "Mariane");
 
-  for ($x = 0; $x <= 10; $x++) {
-    echo $x+1 . " hi<br>";
+  foreach ($array as $loopdata) {
+    echo "My name is " . $loopdata . "<br>";
   }
+
 
 ?>
 

@@ -492,11 +492,22 @@ Logical operators allow comparison of more than one thing in conditional stateme
 ```
 
 
-
-
-
-
 ### VID: 20 - How to Create a Foreach Loop in PHP 
+
+- Foreach loop deals with arrays
+- No issues with infinite loops
+
+```php
+$array = array("Daniel", "Jane", "Jacob", "John", "Mariane");
+
+foreach ($array as $loopdata) {
+  echo "My name is " . $loopdata . "<br>";
+}
+```
+
+
+
+
 ### VID: 21 - Using Arrays in PHP to Store Data 
 ### VID: 22 - How to Create Your Own Function in PHP 
 ### VID: 23 - How to Include Documents in PHP 
