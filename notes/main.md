@@ -755,6 +755,22 @@ WHERE id='1'
 ```
 
 ### VID: 35 - Set Data Order From MySQL Database 
+
+!!! #GOTCHA: His demo datetimes cause errors - cannot be zeros
+
+```sql
+INSERT INTO posts (subject, content, date) VALUES ('Subject 1','Content 1','2015-11-26 08:23:00');
+INSERT INTO posts (subject, content, date) VALUES ('Subject 2','Content 2','2022-02-22 10:08:01');
+```
+
+```sql
+SELECT * FROM posts ORDER BY id ASC
+```
+
+```sql
+SELECT * FROM posts ORDER BY subject ASC
+```
+
 ### VID: 36 - How to connect to a database in PHP 
 ### VID: 37 - How to show database data on a website using MySQLi 
 ### VID: 38 - Insert data from a website into a database using MySQLi 
