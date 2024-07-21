@@ -693,6 +693,14 @@ printArr($_SESSION);
 
 !!! 🛢 Finally we are working with DATABASES! 🛢
 
+- phpMyAdmin
+- He's using Xampp, but I'm using Largon
+
+- Create database called `phplessons`
+
+
+
+
 ### VID: 30 - Create a MySQL Table in Database 
 ### VID: 31 - MySQL Insert Into Database 
 ### VID: 32 - Select Data From MySQL Database 
