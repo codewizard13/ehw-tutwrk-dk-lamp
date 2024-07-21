@@ -739,6 +739,15 @@ SELECT * FROM posts WHERE id='1' AND subject='This is the subject'
 ```
 
 ### VID: 33 - Update Data From MySQL Database 
+
+```sql
+UPDATE posts
+-- Change multiple fields:
+SET subject='This is a test', content='This is the content'
+WHERE id='1'
+```
+
+
 ### VID: 34 - Delete Data From MySQL Database 
 ### VID: 35 - Set Data Order From MySQL Database 
 ### VID: 36 - How to connect to a database in PHP 
