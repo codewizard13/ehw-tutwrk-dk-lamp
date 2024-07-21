@@ -747,8 +747,13 @@ SET subject='This is a test', content='This is the content'
 WHERE id='1'
 ```
 
-
 ### VID: 34 - Delete Data From MySQL Database 
+
+```sql
+DELETE FROM posts
+WHERE id='1'
+```
+
 ### VID: 35 - Set Data Order From MySQL Database 
 ### VID: 36 - How to connect to a database in PHP 
 ### VID: 37 - How to show database data on a website using MySQLi 
