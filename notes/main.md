@@ -710,7 +710,14 @@ create table posts (
 ```
 ### VID: 31 - MySQL Insert Into Database 
 
-
+```sql
+INSERT INTO posts (subject, content, date)
+VALUES (
+  'This is the subject',
+  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aspernatur commodi totam quis! Natus, unde?',
+  '2015-11-14 16:38:01'
+);
+```
 
 
 ### VID: 32 - Select Data From MySQL Database 
