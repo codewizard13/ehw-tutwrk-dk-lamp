@@ -698,11 +698,21 @@ printArr($_SESSION);
 
 - Create database called `phplessons`
 
-
-
-
 ### VID: 30 - Create a MySQL Table in Database 
+
+```sql
+create table posts (
+	id int(11) not null PRIMARY KEY AUTO_INCREMENT,
+    subject varchar(128) not null,
+    content varchar(1000) not null,
+    date datetime not null
+);
+```
 ### VID: 31 - MySQL Insert Into Database 
+
+
+
+
 ### VID: 32 - Select Data From MySQL Database 
 ### VID: 33 - Update Data From MySQL Database 
 ### VID: 34 - Delete Data From MySQL Database 
