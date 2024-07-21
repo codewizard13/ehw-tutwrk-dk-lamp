@@ -721,6 +721,23 @@ VALUES (
 
 
 ### VID: 32 - Select Data From MySQL Database 
+
+```sql
+SELECT subject FROM posts
+```
+
+```sql
+SELECT * FROM posts
+```
+
+```sql
+SELECT * FROM posts WHERE id='1'
+```
+
+```sql
+SELECT * FROM posts WHERE id='1' AND subject='This is the subject'
+```
+
 ### VID: 33 - Update Data From MySQL Database 
 ### VID: 34 - Delete Data From MySQL Database 
 ### VID: 35 - Set Data Order From MySQL Database 
