@@ -11,7 +11,18 @@
 </head>
 <body>
 
-<?php // $conn ?>
+<?php
+  $sql = "SELECT * FROM users WHERE user_first='Daniel';";
+  $result = mysqli_query($conn, $sql);
+  $resultCheck = mysqli_num_rows($result);
+
+  if ($resultCheck > 0) {
+    // KEEP SPITTING OUT DATA AS LONG AS WE HAVE ROWS
+    while ($row = mysqli_fetch_assoc($result)) {
+      echo $row['user_uid'] . "<br>";
+    }
+  }
+
 
 ?>
 

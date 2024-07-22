@@ -793,10 +793,55 @@ $dbName = "loginsystem";
 $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
 ```
 
-
-
-
 ### VID: 37 - How to show database data on a website using MySQLi 
+
+- Create new database called **loginsystem**
+- Create table **users**:
+
+```sql
+CREATE TABLE users (
+  user_id int(11) AUTO_INCREMENT PRIMARY KEY not null,
+  user_first varchar(256) not null,
+  user_last varchar(256) not null,
+  user_email varchar(256) not null,
+  user_uid varchar(256) not null,
+  user_pwd varchar(256) not null
+);
+```
+
+- Add some users:
+
+```sql
+INSERT INTO users (user_first, user_last, user_email, user_uid, user_pwd)
+VALUES ('Daniel', 'Nielsen', 'usemmtuts@gmail.com', 'Admin', 'test123');
+
+INSERT INTO users (user_first, user_last, user_email, user_uid, user_pwd)
+VALUES ('Jane', 'Doe', 'jane@gmail.com', 'jane245a', 'test1234');
+
+INSERT INTO users (user_first, user_last, user_email, user_uid, user_pwd)
+VALUES ('Eric', 'Hepperle', 'support@erichepperle.com', 'erich', 'pass9911');
+```
+
+!!! #GOTCHA: When we are writing SQL in PHP we need to include a semicolon `;` within the double quotes
+
+- Add this in the body:
+
+```php
+<?php
+  $sql = "SELECT * FROM users WHERE user_first='Daniel';";
+  $result = mysqli_query($conn, $sql);
+  $resultCheck = mysqli_num_rows($result);
+
+  if ($resultCheck > 0) {
+    // KEEP SPITTING OUT DATA AS LONG AS WE HAVE ROWS
+    while ($row = mysqli_fetch_assoc($result)) {
+      echo $row['user_uid'] . "<br>";
+    }
+  }
+```
+
+
+
 ### VID: 38 - Insert data from a website into a database using MySQLi 
 ### VID: 39 - Protect your database against SQL injection using MySQLi 
 ### VID: 40 - What are Prepared Statements and how to use them 
