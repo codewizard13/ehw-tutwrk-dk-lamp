@@ -840,9 +840,65 @@ VALUES ('Eric', 'Hepperle', 'support@erichepperle.com', 'erich', 'pass9911');
   }
 ```
 
-
-
 ### VID: 38 - Insert data from a website into a database using MySQLi 
+
+- Create **includes/signup.inc.php**:
+
+```php
+<?php
+
+include_once 'dbh.inc.php';
+
+$first = $_POST['first'];
+$last = $_POST['last'];
+$email = $_POST['email'];
+$uid = $_POST['uid'];
+$pwd = $_POST['pwd'];
+
+$sql = "INSERT INTO users (user_first, user_last, user_email, user_uid, user_pwd) VALUES ('$first', '$last', '$email', '$uid', '$pwd');";
+
+mysqli_query($conn, $sql);
+
+header("Location: ../index.php?signup=success");
+```
+
+- Change **index.php** to:
+
+```php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+</head>
+<style>
+input {
+  display: block;
+}
+</style>
+<body>
+
+<form action="includes/signup.inc.php" method="POST">
+  <input type="text" name="first" placeholder="Firstname">
+  <input type="text" name="last" placeholder="Lastname">
+  <input type="text" name="email" placeholder="E-mail">
+  <input type="text" name="uid" placeholder="Username">
+  <input type="text" name="pwd" placeholder="Password">
+  <br>
+  <button type="submit" name="submit">Sign up</button>
+</form>
+
+
+</body>
+</html>
+```
+
+- 10:11 - #GOTCHA: You could easily miss the fact that Dani MOVED the database include_once to signup.inc.php, because he says "copy it" ...
+
+- 13:00 - #GOTCHA: It is not intuitive that you have to add single quotes around the PHP variables in the insert statement
+
+
 ### VID: 39 - Protect your database against SQL injection using MySQLi 
 ### VID: 40 - What are Prepared Statements and how to use them 
 ### VID: 41 - What Are Error Handlers in PHP 

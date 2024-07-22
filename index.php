@@ -1,7 +1,3 @@
-<?php
-  include_once 'includes/dbh.inc.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,22 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
 </head>
+<style>
+input {
+  display: block;
+}
+</style>
 <body>
 
-<?php
-  $sql = "SELECT * FROM users WHERE user_first='Daniel';";
-  $result = mysqli_query($conn, $sql);
-  $resultCheck = mysqli_num_rows($result);
+<form action="includes/signup.inc.php" method="POST">
+  <input type="text" name="first" placeholder="Firstname">
+  <input type="text" name="last" placeholder="Lastname">
+  <input type="text" name="email" placeholder="E-mail">
+  <input type="text" name="uid" placeholder="Username">
+  <input type="text" name="pwd" placeholder="Password">
+  <br>
+  <button type="submit" name="submit">Sign up</button>
+</form>
 
-  if ($resultCheck > 0) {
-    // KEEP SPITTING OUT DATA AS LONG AS WE HAVE ROWS
-    while ($row = mysqli_fetch_assoc($result)) {
-      echo $row['user_uid'] . "<br>";
-    }
-  }
-
-
-?>
 
 </body>
 </html>
