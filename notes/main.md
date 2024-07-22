@@ -772,6 +772,30 @@ SELECT * FROM posts ORDER BY subject ASC
 ```
 
 ### VID: 36 - How to connect to a database in PHP 
+
+- 💥 HERE THERE BE BREAKING CHANGES💥
+- We are going to RE-ARCHITECT the REPO somewhat
+- Create file: **includes/dbh.inc.php**:
+
+```php
+<?php
+/**
+ * dbh = database handler
+ * .inc = this is an includes file
+ */
+
+$dbServername = "localhost";
+$dbUsername = "root";
+$dbPassword = "";
+$dbName = "loginsystem";
+
+// #GOTCHA: The parameter order is important in the $conn definition
+$conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
+```
+
+
+
+
 ### VID: 37 - How to show database data on a website using MySQLi 
 ### VID: 38 - Insert data from a website into a database using MySQLi 
 ### VID: 39 - Protect your database against SQL injection using MySQLi 
