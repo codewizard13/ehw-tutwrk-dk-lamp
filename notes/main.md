@@ -900,7 +900,28 @@ input {
 
 
 ### VID: 39 - Protect your database against SQL injection using MySQLi 
+
+!!! #GOTCHA: To avoid SQL INJECTION, NEVER inject the form variables directly without sanitizing first!
+
+- Using **mysqli_real_escape_string()** is one way to make form values safe:
+
+```php
+include_once 'dbh.inc.php';
+
+$first = mysqli_real_escape_string($conn, $_POST['first']);
+$last = mysqli_real_escape_string($conn, $_POST['last']);
+$email = mysqli_real_escape_string($conn, $_POST['email']);
+$uid = mysqli_real_escape_string($conn, $_POST['uid']);
+$pwd = mysqli_real_escape_string($conn, $_POST['pwd']);
+```
+
+- Another, better, way is called **prepared statements**
+
 ### VID: 40 - What are Prepared Statements and how to use them 
+
+
+
+
 ### VID: 41 - What Are Error Handlers in PHP 
 ### VID: 42 - How to Display Error Messages Using PHP 
 ### VID: 43 - Hashing and de-hashing data using PHP 
