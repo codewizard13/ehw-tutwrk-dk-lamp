@@ -919,6 +919,50 @@ $pwd = mysqli_real_escape_string($conn, $_POST['pwd']);
 
 ### VID: 40 - What are Prepared Statements and how to use them 
 
+- **SQL Injection**: When users write code in a form field that could damage the database
+
+!!! #TIP: In PHP, always check for failure before checking for success to enable early escape clause
+
+- Parameter types for the **mysqli_stmt_bind_param()** function:
+  - s = string
+  - i = integer
+  - b = BLOB
+  - d = double
+
+!!! #GOTCHA: In `mysqli_stmt_bind_param()`, use if you have `n` questionmarks (placeholders), then you will normally have to write `n` "s", like this:
+
+```php
+//Bind parameters to the placeholder
+mysqli_stmt_bind_param($stmt, "sss", $data1, $data2, $data3);
+```
+
+**File: index.php**
+
+- Here's the php for the prepared SQL statement to get user with id of `Admin` inside index.php:
+
+```php
+<?php
+$data = "Admin";
+//Created a template
+$sql = "SELECT * FROM users WHERE user_uid=?;";
+//Create a prepared statement
+$stmt = mysqli_stmt_init($conn);
+//Prepare the prepared statement
+if (!mysqli_stmt_prepare($stmt, $sql)) {
+  echo "SQL statement failed!<br>";
+} else {
+  //Bind parameters to the placeholder [replace]
+  mysqli_stmt_bind_param($stmt, "s", $data);
+  //Run parameters inside database
+  mysqli_stmt_execute($stmt);
+  $result = mysqli_stmt_get_result($stmt);
+
+  while ($row = mysqli_fetch_assoc($result)) {
+    echo $row['user_uid'] . "<br>";
+  }
+}
+?>
+```
 
 
 
