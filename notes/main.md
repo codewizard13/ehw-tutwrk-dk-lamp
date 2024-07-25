@@ -1122,6 +1122,8 @@ $fullUrl = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 echo "\$fullUrl = $fullUrl<br>";
 ```
 
+!!! #GOTCHA: To center BODY tag, or any BLOCK element make sure margin left and right is set to auto AND you must give the element a width less that 100%
+
 ### VID: 43 - Hashing and de-hashing data using PHP 
 ### VID: 44 - (UPDATED VIDEO IN DESC) How To Create A Login System In PHP For Beginners 
 ### VID: 45 - What are arrays used for in PHP - PHP tutorial
