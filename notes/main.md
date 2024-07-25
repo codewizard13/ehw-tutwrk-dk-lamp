@@ -1113,6 +1113,15 @@ if (! isset($_POST['submit'])) {
 
 
 ### VID: 42 - How to Display Error Messages Using PHP 
+
+- How to get the full URL from **$_SERVER** variables:
+
+```php
+//Get full URL
+$fullUrl = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+echo "\$fullUrl = $fullUrl<br>";
+```
+
 ### VID: 43 - Hashing and de-hashing data using PHP 
 ### VID: 44 - (UPDATED VIDEO IN DESC) How To Create A Login System In PHP For Beginners 
 ### VID: 45 - What are arrays used for in PHP - PHP tutorial

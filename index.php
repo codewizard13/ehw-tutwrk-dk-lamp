@@ -22,9 +22,15 @@ input {
   <input type="text" name="email" placeholder="E-mail">
   <input type="text" name="uid" placeholder="Username">
   <input type="text" name="pwd" placeholder="Password">
-  <br>
   <button type="submit" name="submit">Sign up</button>
 </form>
+
+<?php
+  //Get full URL
+  $fullUrl = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+  echo "\$fullUrl = $fullUrl<br>";
+
+?>
 
 
 </body>
