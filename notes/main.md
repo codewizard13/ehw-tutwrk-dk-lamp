@@ -1029,13 +1029,25 @@ if (! mysqli_stmt_prepare($stmt, $sql)) {
 header("Location: ../index.php?signup=success");
 ```
 
-
-
-
-
-
-
 ### VID: 41 - What Are Error Handlers in PHP 
+
+- Last example, but with a check for whether the submit button was pressed:
+
+```php
+<?php
+
+if (! isset($_POST['submit'])) {
+  header("Location: ../index.php?signup=error");
+} else {
+  include_once 'dbh.inc.php';
+
+  $first = mysqli_real_escape_string($conn, $_POST['first']);
+  $last = mysqli_real_escape_string($conn, $_POST['last']);
+  ...
+```
+
+
+
 ### VID: 42 - How to Display Error Messages Using PHP 
 ### VID: 43 - Hashing and de-hashing data using PHP 
 ### VID: 44 - (UPDATED VIDEO IN DESC) How To Create A Login System In PHP For Beginners 
