@@ -27,22 +27,22 @@ include_once 'includes/dbh.inc.php';
   </form>
 
   <?php
-  //Get full URL
-  $fullUrl = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+  // //Get full URL
+  // $fullUrl = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
-  if (strpos($fullUrl, "signup=empty") == true) {
-    echo "<p class='error'>You did not fill in all fields!</p>";
-    exit;
-  } elseif (strpos($fullUrl, "signup=char") == true) {
-    echo "<p class='error'>You entered some invalid characters!</p>";
-    exit;
-  } elseif (strpos($fullUrl, "signup=invalidemail") == true) {
-    echo "<p class='error'>You entered an invalid email!</p>";
-    exit;
-  } elseif (strpos($fullUrl, "signup=success") == true) {
-    echo "<p class='success'>You have been signed up!</p>";
-    exit;
-  }
+  // if (strpos($fullUrl, "signup=empty") == true) {
+  //   echo "<p class='error'>You did not fill in all fields!</p>";
+  //   exit;
+  // } elseif (strpos($fullUrl, "signup=char") == true) {
+  //   echo "<p class='error'>You entered some invalid characters!</p>";
+  //   exit;
+  // } elseif (strpos($fullUrl, "signup=invalidemail") == true) {
+  //   echo "<p class='error'>You entered an invalid email!</p>";
+  //   exit;
+  // } elseif (strpos($fullUrl, "signup=success") == true) {
+  //   echo "<p class='success'>You have been signed up!</p>";
+  //   exit;
+  // }
 
   ?>
 
