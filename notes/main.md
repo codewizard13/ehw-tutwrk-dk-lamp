@@ -1363,9 +1363,20 @@ if (!isset($_POST['submit'])) {
 }
 ```
 
-
-
 ### VID: 43 - Hashing and de-hashing data using PHP 
+
+- Making a password unreadable - encoding and decoding
+- **bcrypt**: a hashing / data encryption method built-into PHP that is always kept updated
+- The SALT is automatically included
+- **salting**: adding a random string into the encoding of the password
+
+
+
+
+
+
+
+
 ### VID: 44 - (UPDATED VIDEO IN DESC) How To Create A Login System In PHP For Beginners 
 ### VID: 45 - What are arrays used for in PHP - PHP tutorial
 ### VID: 46 - Insert data into array in PHP - PHP tutorial
