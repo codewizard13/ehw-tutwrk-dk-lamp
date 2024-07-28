@@ -18,10 +18,35 @@ include_once 'includes/dbh.inc.php';
 <body>
 
   <form action="includes/signup.inc.php" method="POST">
-    <input type="text" name="first" placeholder="Firstname">
-    <input type="text" name="last" placeholder="Lastname">
+    <?php
+    //Firstname
+    if (isset($_GET['first'])) {
+      $first = $_GET['first'];
+      echo '<input type="text" name="first" placeholder="Firstname"value="'.$first.'">';
+    }
+    else {
+      echo '<input type="text" name="first" placeholder="Firstname">';
+    }
+    //Lastname
+    if (isset($_GET['last'])) {
+      $last = $_GET['last'];
+      echo '<input type="text" name="last" placeholder="Lastname"value="'.$last.'">';
+    }
+    else {
+      echo '<input type="text" name="last" placeholder="Lastname">';
+    }
+    ?>
     <input type="text" name="email" placeholder="E-mail">
-    <input type="text" name="uid" placeholder="Username">
+    <?php
+    //Username
+    if (isset($_GET['uid'])) {
+      $uid = $_GET['uid'];
+      echo '<input type="text" name="uid" placeholder="Username"value="'.$uid.'">';
+    }
+    else {
+      echo '<input type="text" name="uid" placeholder="Username">';
+    }
+    ?>
     <input type="text" name="pwd" placeholder="Password">
     <button type="submit" name="submit">Sign up</button>
   </form>
@@ -54,16 +79,13 @@ include_once 'includes/dbh.inc.php';
     if ($signupCheck == "empty") {
       echo "<p class='error'>You did not fill in all fields!</p>";
       exit;
-    }
-    elseif ($signupCheck == "char") {
+    } elseif ($signupCheck == "char") {
       echo "<p class='error'>You entered some invalid characters!</p>";
       exit;
-    }
-    elseif ($signupCheck == "invalidemail") {
+    } elseif ($signupCheck == "invalidemail") {
       echo "<p class='error'>You entered an invalid email!</p>";
       exit;
-    }
-    elseif ($signupCheck == "success") {
+    } elseif ($signupCheck == "success") {
       echo "<p class='success'>You have been signed up!</p>";
       exit;
     }

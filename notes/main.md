@@ -1243,6 +1243,127 @@ include_once 'includes/dbh.inc.php';
 </html>
 ```
 
+!!! #GOTCHA: When echoing inputs, need to ensure any php variables are double and single quotes (don't forget to print quotes around the variable like `"'.$uid.'">'`)
+
+
+
+#### Version 3: Error Checking with $_GET variables & remmbering sticky values
+
+**File: index.php (just body tag)**
+
+```php
+<body>
+
+  <form action="includes/signup.inc.php" method="POST">
+    <?php
+    //Firstname
+    if (isset($_GET['first'])) {
+      $first = $_GET['first'];
+      echo '<input type="text" name="first" placeholder="Firstname"value="'.$first.'">';
+    }
+    else {
+      echo '<input type="text" name="first" placeholder="Firstname">';
+    }
+    //Lastname
+    if (isset($_GET['last'])) {
+      $last = $_GET['last'];
+      echo '<input type="text" name="last" placeholder="Lastname"value="'.$last.'">';
+    }
+    else {
+      echo '<input type="text" name="last" placeholder="Lastname">';
+    }
+    ?>
+    <input type="text" name="email" placeholder="E-mail">
+    <?php
+    //Username
+    if (isset($_GET['uid'])) {
+      $uid = $_GET['uid'];
+      echo '<input type="text" name="uid" placeholder="Username"value="'.$uid.'">';
+    }
+    else {
+      echo '<input type="text" name="uid" placeholder="Username">';
+    }
+    ?>
+    <input type="text" name="pwd" placeholder="Password">
+    <button type="submit" name="submit">Sign up</button>
+  </form>
+
+  <?php
+  if (!isset($_GET['signup'])) {
+    exit;
+  } else {
+    $signupCheck = $_GET['signup'];
+
+    if ($signupCheck == "empty") {
+      echo "<p class='error'>You did not fill in all fields!</p>";
+      exit;
+    } elseif ($signupCheck == "char") {
+      echo "<p class='error'>You entered some invalid characters!</p>";
+      exit;
+    } elseif ($signupCheck == "invalidemail") {
+      echo "<p class='error'>You entered an invalid email!</p>";
+      exit;
+    } elseif ($signupCheck == "success") {
+      echo "<p class='success'>You have been signed up!</p>";
+      exit;
+    }
+
+  }
+  ?>
+
+</body>
+```
+
+
+#NOTE: The following signup code **doesn't actually write to the database**, but it does help us setup and test the error handling. Here is an example of how to remember the variables that are valid while blanking out the incorrect ones:
+
+```php
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+  header("Location: ../index.php?signup=invalidemail&first=$first&last=$last&uid=$uid");
+...
+```
+**File: signup.inc.php**
+
+
+```php
+<?php
+
+if (!isset($_POST['submit'])) {
+  header("Location: ../index.php?signup=error");
+} else {
+  include_once 'dbh.inc.php';
+
+  $first = $_POST['first'];
+  $last = $_POST['last'];
+  $email = $_POST['email'];
+  $uid = $_POST['uid'];
+  $pwd = $_POST['pwd'];
+
+  //Ensure the post variables aren't empty
+  if (empty($first) || empty($last) || empty($email) || empty($uid) || empty($pwd)) {
+    header("Location: ../index.php?signup=empty");
+    exit();
+  } else {
+    //Check if input characters are valid
+    if (!preg_match("/^[a-zA-Z]*$/", $first) || !preg_match("/^[a-zA-Z]*$/", $last)) {
+      header("Location: ../index.php?signup=char");
+      exit();
+    } else {
+      //Check if email is valid
+      if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        header("Location: ../index.php?signup=invalidemail&first=$first&last=$last&uid=$uid");
+        exit();
+      } else {
+        echo "Sign up the user!";
+        header("Location: ../index.php?signup=success");
+        exit();
+      }
+    }
+  }
+}
+```
+
+
 
 ### VID: 43 - Hashing and de-hashing data using PHP 
 ### VID: 44 - (UPDATED VIDEO IN DESC) How To Create A Login System In PHP For Beginners 

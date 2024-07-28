@@ -29,7 +29,7 @@ if (!isset($_POST['submit'])) {
     } else {
       //Check if email is valid
       if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: ../index.php?signup=invalidemail");
+        header("Location: ../index.php?signup=invalidemail&first=$first&last=$last&uid=$uid");
         exit();
       } else {
         echo "Sign up the user!";
