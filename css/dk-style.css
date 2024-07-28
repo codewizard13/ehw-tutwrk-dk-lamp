@@ -73,5 +73,10 @@ button {
 }
 
 .success {
-
+  color: green;
+  border: solid 2px forestgreen;
+  border-radius: 1.1rem;
+  padding: .2rem 1rem;
+  display: inline-block;
+  background: rgb(212, 251, 224);
 }

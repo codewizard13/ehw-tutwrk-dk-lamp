@@ -41,6 +41,7 @@ include_once 'includes/dbh.inc.php';
     exit;
   } elseif (strpos($fullUrl, "signup=success") == true) {
     echo "<p class='success'>You have been signed up!</p>";
+    exit;
   }
 
   ?>
